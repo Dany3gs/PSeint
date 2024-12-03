@@ -1,9 +1,9 @@
 Algoritmo Ejercicio14
 	Dimensionar array(3)
-	Escribir 'Indique tres números para ordenar de menor a mayor.' // Declarar un array con espacio para 3 números
+	Escribir 'Indique tres números para ordenar de menor a mayor.'
 	// Llenar el array con los números
 	Para i<-1 Hasta 3 Hacer
-		Escribir 'Número ', i, ': '
+		Escribir 'Número ', i, ': ' // Declarar un array con espacio para 3 números
 		Leer array[i]
 	FinPara
 	// Ordenar el array de menor a mayor usando un método sencillo

@@ -3,25 +3,38 @@ Algoritmo Ejercicio12
 	Escribir "Indique una calificación para indicar su calificación:";
 	Leer nota
 	
-	Si nota >= 19 Y nota <= 20 Entonces
+	Definir continuar Como Logico;
+	continuar <- Verdadero;
+	
+	Mientras nota >= 19 Y nota <= 20 Y continuar Hacer
 		Escribir "La calificación es A";
-	SiNo
-		Si nota >= 16 Y nota <= 18 Entonces
-			Escribir "La calificación es B";
-		SiNo
-			Si nota >= 13 Y nota <= 15 Entonces
-				Escribir "La calificación es C";
-			SiNo
-				Si nota >= 10 Y nota <= 12 Entonces
-					Escribir "La calificación es D";
-				SiNo
-					Si nota >= 1 Y nota < 10 Entonces
-						Escribir "La calificación es E";
-					SiNo
-						Escribir "La calificación es ERRÓNEA";
-					Fin Si
-				Fin Si
-			Fin Si
-		Fin Si
+		continuar <- Falso;
+	FinMientras
+	
+	Mientras nota >= 16 Y nota <= 18 Y continuar Hacer
+		Escribir "La calificación es B";
+		continuar <- Falso;
+	Fin Mientras
+	
+	Mientras nota >= 13 Y nota <= 15 Y continuar Hacer
+		Escribir "La calificación es C";
+		continuar <- Falso;
+	Fin Mientras
+	
+	Mientras nota >= 10 Y nota <= 12 Y continuar Hacer
+		
+		Escribir "La calificación es D";
+		continuar <- Falso;
+	Fin Mientras
+	
+	Mientras nota >= 1 Y nota < 10 Y continuar Hacer
+		Escribir "La calificación es D";
+		continuar <- Falso;
+	Fin Mientras
+	
+		
+	Si nota <= 0 O nota > 20 Entonces
+		Escribir "La calificación es ERRÓNEA";
 	Fin Si
+			
 FinAlgoritmo

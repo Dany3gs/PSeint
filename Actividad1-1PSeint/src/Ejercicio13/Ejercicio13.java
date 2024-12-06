@@ -1,6 +1,6 @@
 package Ejercicio13;
 
-//Pendiente aclarar, pide un while del ejercicio 12...
+//13. Realiza el mismo diagrama de flujo utilizando Mientras (While).
 
 import java.util.Scanner;
 

@@ -17,7 +17,7 @@ public class Ejercicio12 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int nota = 0;
+        int nota;
 
         System.out.println("Indique una calificación para indicar su calificación:");
         nota = sc.nextInt();

@@ -4,6 +4,7 @@ Algoritmo Ejercicio11
 	Definir impares Como Entero
 	suma <- 0
 	impares <- 0
+	Escribir "Los números impares hasta 300 son: ";
 	Para contador<-0 Hasta 300 Con Paso 1 Hacer
 		Si contador MOD 2<>0 Entonces
 			impares <- impares+contador

@@ -9,10 +9,12 @@ public class Ejercicio9 {
     public static void main(String[] args) {
 
         int suma = 0;
-
+        System.out.println("Los números múltiplos de 5 son: ");
         for (int contador = 0; contador <= 100; contador += 5) {
             suma = suma + contador;
+            System.out.println(contador);;
         }
+
         System.out.println("La suma de los números múltiplos de 5 entre el 1 y el 100 es: " + suma);
     }
 }
